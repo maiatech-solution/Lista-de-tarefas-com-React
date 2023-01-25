@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.hide {
+    display: none !important;
+}
+
+.header{
+    @apply bg-neutral-800 text-cyan-300 text-center p-4
+}
+
+.main{
+    @apply min-h-[85vh] p-8 text-center
+}
+
+.main h2{
+    @apply mb-3.5
+}
+
+.form{
+    @apply flex flex-col max-w-md m-auto
+}
+
+.form input{
+    @apply py-2 px-4 mb-6 border-2  border-solid outline-none
+}
+
+.form input[type=submit]{
+    @apply  bg-cyan-300 text-neutral-800 border-2 border-cyan-300 duration-700
+}
+
+.form input[type="submit"]:hover{
+    @apply bg-neutral-800 text-cyan-300 border-neutral-800
+}
+
+.input_container{
+    @apply flex flex-col text-left
+}
+
+.input_container label{
+    @apply font-bold mt-2
+}
+
+.task{
+    @apply flex justify-between max-w-md m-auto border-b-2 p-2
+}
+
+.task .styles_datails{
+    @apply text-left
+}
+
+.task .styles_datails h4{
+    @apply mb-2 text-xl
+}
+
+.task .styles_actions{
+    @apply flex flex-col items-center justify-center
+}
+
+.task .styles_actions i{
+    @apply mb-2 text-lg cursor-pointer bg-neutral-800 text-white p-2 duration-500
+}
+
+.task .styles_actions i:hover{
+    @apply  text-cyan-300
+}
+
+.footer{
+    @apply bg-neutral-800 text-cyan-300 text-center p-8
+}
+
+.fade{
+    @apply w-full h-full absolute bg-black opacity-30
+}
+
+.modal{
+    @apply absolute top-[25%] left-[0%] right-[0%] m-auto w-[500px] border h-[400px] z-10 bg-white flex flex-col justify-center items-center
+}
+
+.modal h2{
+    @apply mb-2 mt-8 font-bold
+}
+
+.modal form{
+    @apply w-[90%]
+}
